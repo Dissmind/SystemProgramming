@@ -3,6 +3,7 @@
 using SystemProgramming.second_labs.forms.lab2;
 using SystemProgramming.second_labs.forms.lab3;
 using SystemProgramming.second_labs.forms.lab4_5;
+using SystemProgramming.second_labs.forms.lab7;
 
 namespace SystemProgramming
 {
@@ -61,7 +62,13 @@ namespace SystemProgramming
 
         private void open_lab7_second_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (Config.Variant)
+            {
+                case 18:
+                    var win18 = new Lab7_second();
+                    win18.Show();
+                    break;
+            }
         }
 
         private void open_lab8_second_Click(object sender, RoutedEventArgs e)

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Folder Include="first_labs\forms\" />
+    <Folder Include="second_labs\forms\lab6\" />
   </ItemGroup>
 
 </Project>
