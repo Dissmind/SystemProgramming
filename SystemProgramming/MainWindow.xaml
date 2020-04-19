@@ -17,6 +17,7 @@
                 <ComboBox x:Name="Variant_ComboBox" Width="80" SelectionChanged="Variant_ComboBox_SelectionChanged" Margin="0 10 0 0" >
                     <ComboBoxItem IsSelected="True">1</ComboBoxItem>
                     <ComboBoxItem>2</ComboBoxItem>
+                    <ComboBoxItem>18</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
 
@@ -24,7 +25,7 @@
                 <Button Content="Информация" Name="info_button" Width="160" Height="30" Margin="10"/>
                 <Button Content="1-ый Семестр" Name="first_labs_menu_button" Width="160" Height="30" Margin="10" Click="Open_Menu_First_Labs" />
                 <Button Content="2-ой Семестр" Name="second_labs_menu_button" Width="160" Height="30" Margin="10" Click="Open_Menu_Second_Labs" />
-                <Button Content="Выход" Name="exit_button" Width="160" Height="30" Margin="10"/>
+                <Button Content="Выход" Name="exit_button" Width="160" Height="30" Margin="10" Click="Close_Window" />
             </StackPanel>
         </StackPanel>
     </Grid>

@@ -12,45 +12,31 @@
                 <Label Content="Первый семестр" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center" />
 
                 <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab2_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab2_first" Content="Описание" Width="160" Height="30" />
+                    <Label Content="Лабораторная работа № 2-3" HorizontalAlignment="Center" />
+                    <Label Content="Вычисление уравнений" HorizontalAlignment="Center" />
+                    <Button x:Name="open_lab2_3_first" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="description_lab2_3_first" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab3_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab3_first" Content="Описание" Width="160" Height="30" />
+                    <Label Content="Лабораторная работа № 4" HorizontalAlignment="Center" />
+                    <Label Content="Работа с массивами" HorizontalAlignment="Center" />
+                    <Button x:Name="open_lab4_first" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="description_lab4_first" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab4_5_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab4_5_first" Content="Описание" Width="160" Height="30" />
+                    <Label Content="Лабораторная работа № 5" HorizontalAlignment="Center" />
+                    <Label Content="Работа со строками" HorizontalAlignment="Center" />
+                    <Button x:Name="open_lab5_first" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="description_lab5_first" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab6_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab6_first" Content="Описание" Width="160" Height="30" />
-                </StackPanel>
-
-                <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab7_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab7_first" Content="Описание" Width="160" Height="30" />
-                </StackPanel>
-
-                <StackPanel Margin="10 10">
-                    <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
-                    <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab10_first" Content="Открыть" Width="160" Height="30" Margin="10" />
-                    <Button x:Name="description_lab10_first" Content="Описание" Width="160" Height="30" />
+                    <Label Content="Лабораторная работа № 7-10" HorizontalAlignment="Center" />
+                    <Label Content="Структуры" HorizontalAlignment="Center" />
+                    <Button x:Name="open_lab7_10_first" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="description_lab7_10_first" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
