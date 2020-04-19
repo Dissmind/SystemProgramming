@@ -25,6 +25,7 @@ namespace SystemProgramming.second_labs.forms.lab7
         private void Loading_Text_Button_Click(object sender, RoutedEventArgs e)
         {
             // TODO: loading text from txt file and write in Loading_TextBlock
+            Loading_TextBlock.Text = FileHelper.ReadFile(FileHelper.DirectoryPath);
         }
 
         private void Render_Button_Click(object sender, RoutedEventArgs e)
@@ -39,9 +40,7 @@ namespace SystemProgramming.second_labs.forms.lab7
 
         private void SaveTextInFile_Button_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: save in txt file from Render_TextBlock
-
-            FileHelper.CreateOrUpdateFile(Render_TextBlock.Text);
+            FileHelper.CreateOrUpdateFile(Render_TextBlock.Text, FileHelper.DirectoryPath);
         }
     }
 }
