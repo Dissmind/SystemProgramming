@@ -49,8 +49,6 @@ namespace SystemProgramming
                 Config.Variant = int.Parse(selectedItem);
             } 
             catch { }
-
-            MessageBox.Show(Config.Variant.ToString());
         }
 
         private void Close_Window(object sender, RoutedEventArgs e)

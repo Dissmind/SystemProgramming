@@ -14,49 +14,49 @@
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 2" HorizontalAlignment="Center" />
                     <Label Content="Компоновка элементов окна" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab2_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab2_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab2_second_Click" />
                     <Button x:Name="description_lab2_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 3" HorizontalAlignment="Center" />
                     <Label Content="Работа с текстовыми компонентами и компонентами управления" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab3_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab3_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab3_second_Click" />
                     <Button x:Name="description_lab3_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 4-5" HorizontalAlignment="Center" />
                     <Label Content="Анимация" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab4_5_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab4_5_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab4_5_second_Click" />
                     <Button x:Name="description_lab4_5_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 6" HorizontalAlignment="Center" />
                     <Label Content="Работа с графиками" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab6_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab6_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab6_second_Click" />
                     <Button x:Name="description_lab6_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 7" HorizontalAlignment="Center" />
                     <Label Content="Обработка текста" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab7_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab7_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab7_second_Click" />
                     <Button x:Name="description_lab7_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 8" HorizontalAlignment="Center" />
                     <Label Content="Обработка табличных данных" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab8_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab8_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab8_second_Click" />
                     <Button x:Name="description_lab8_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
 
                 <StackPanel Margin="10 10">
                     <Label Content="Лабораторная работа № 10" HorizontalAlignment="Center" />
                     <Label Content="Работа с Базой Данных" HorizontalAlignment="Center" />
-                    <Button x:Name="open_lab10_second" Content="Открыть" Width="160" Height="30" Margin="10" />
+                    <Button x:Name="open_lab10_second" Content="Открыть" Width="160" Height="30" Margin="10" Click="open_lab10_second_Click" />
                     <Button x:Name="description_lab10_second" Content="Описание" Width="160" Height="30" />
                 </StackPanel>
             </StackPanel>

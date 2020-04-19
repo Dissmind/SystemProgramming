@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="first_labs\" />
-    <Folder Include="second_labs\" />
+    <Folder Include="first_labs\forms\" />
   </ItemGroup>
 
 </Project>
