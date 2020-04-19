@@ -1,14 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace SystemProgramming.second_labs.forms.lab7
+﻿namespace SystemProgramming.second_labs.forms.lab7
 {
     public class TextRender
     {
         public static string ChangeVowelCase(string text)
         {
-            return text + "a";
+            string result = "";
+
+            foreach (char i in text)
+            {
+                if (IsVowel(i))
+                {
+                    if (char.IsUpper(i))
+                    {
+                        result += i.ToString().ToLower();
+                    }
+                    else
+                    {
+                        result += i.ToString().ToUpper();
+                    }
+                }
+                else
+                {
+                    result += i;
+                }
+
+            }
+
+            return result;
         }
 
 
@@ -17,35 +35,25 @@ namespace SystemProgramming.second_labs.forms.lab7
 
         // Variant 18
 
-        private static bool IsUpperCase(char s)
-        {
-            if (s > 'z' || s > 'я')
-            {
-                return true;
-            }
-
-            return false;
-        }
-
         private static bool IsVowel(char s)
         {
-            char[] vowel = 
+            char[] vowels = 
                 {
 
                 // Eng
-                'а', 'e', 'i', 'o', 'u', 'y',
+                'a', 'e', 'i', 'o', 'u', 'y',
                 'A', 'E', 'I', 'O', 'U', 'Y',
 
                 // Rus
                 'а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я',
-                'Ф', 'У', 'Ё', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я'
+                'А', 'Е', 'Ё', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я'
 
                 };
 
 
-            foreach (var i in vowel)
+            foreach (char i in vowels)
             {
-                if (s == i)
+                if (s.Equals(i))
                 {
                     return true;
                 }

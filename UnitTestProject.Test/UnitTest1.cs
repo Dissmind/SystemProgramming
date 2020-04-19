@@ -7,9 +7,13 @@ namespace UnitTestProject.Test
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestTextReader()
         {
-            Assert.AreEqual(TextRender.ChangeVowelCase("abc"), "Abc");
+            Assert.AreEqual(TextRender.ChangeVowelCase("abceE"), "AbcEe");
+            Assert.AreEqual(TextRender.ChangeVowelCase("sdf"), "sdf");
+            Assert.AreEqual(TextRender.ChangeVowelCase("ûâà"), "ÛâÀ");
+            Assert.AreEqual(TextRender.ChangeVowelCase("öö"), "öö");
+            Assert.AreEqual(TextRender.ChangeVowelCase(""), "");
         }
     }
 }
