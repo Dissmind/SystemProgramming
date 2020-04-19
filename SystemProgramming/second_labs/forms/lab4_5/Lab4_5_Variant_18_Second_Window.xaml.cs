@@ -42,7 +42,7 @@ namespace SystemProgramming.second_labs.forms.lab4_5
 
             canvasArea.Width = 450;
             canvasArea.Height = 450;
-            canvasArea.Background = Brushes.Blue;
+            canvasArea.Background = Brushes.Blue; 
 
             int[] cordPoints = { 0, 0, 50, 0, 50, 50, 0, 50 };
 

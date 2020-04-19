@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemProgramming"
         mc:Ignorable="d"
-        Title="MenuSecondLabs" Height="450" Width="800">
+        Title="MenuSecondLabs" Height="560" Width="740" MinHeight="550" MinWidth="560">
     <Grid>
         <ScrollViewer>
             <StackPanel>

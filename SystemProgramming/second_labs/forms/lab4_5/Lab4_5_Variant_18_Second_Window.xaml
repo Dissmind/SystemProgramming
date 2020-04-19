@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemProgramming.second_labs.forms.lab4_5"
         mc:Ignorable="d"
-        Title="Lab4_5_Variant_18_Second_Window" Height="450" Width="800">
-    <Grid>
-        <Canvas x:Name="MainCanvas"></Canvas>
-    </Grid>
+        Title="Lab4_5_Variant_18_Second_Window" MinHeight="550" MinWidth="900">
+
+    <Canvas Margin="20" x:Name="MainCanvas" />
+
 </Window>

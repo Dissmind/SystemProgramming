@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SystemProgramming"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="560" Width="740" MinHeight="550" MinWidth="560">
     <Grid>
         <StackPanel>
             <Label Content="Лабораторные работы" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" />

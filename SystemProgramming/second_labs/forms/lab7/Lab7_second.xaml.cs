@@ -24,7 +24,6 @@ namespace SystemProgramming.second_labs.forms.lab7
 
         private void Loading_Text_Button_Click(object sender, RoutedEventArgs e)
         {
-            // TODO: loading text from txt file and write in Loading_TextBlock
             Loading_TextBlock.Text = FileHelper.ReadFile(FileHelper.DirectoryPath);
         }
 
