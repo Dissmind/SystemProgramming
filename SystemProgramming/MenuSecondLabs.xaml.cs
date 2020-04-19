@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+
 using SystemProgramming.second_labs.forms.lab2;
+using SystemProgramming.second_labs.forms.lab3;
 
 namespace SystemProgramming
 {
@@ -37,13 +29,17 @@ namespace SystemProgramming
                     win18.Show();
                     break;
             }
-
-            
         }
 
         private void open_lab3_second_Click(object sender, RoutedEventArgs e)
         {
-
+            switch (Config.Variant)
+            {
+                case 18:
+                    var win18 = new Lab3_Variant_18_Second_Window();
+                    win18.Show();
+                    break;
+            }
         }
 
         private void open_lab4_5_second_Click(object sender, RoutedEventArgs e)
