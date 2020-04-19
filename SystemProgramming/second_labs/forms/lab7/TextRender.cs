@@ -4,11 +4,11 @@ using System.Text;
 
 namespace SystemProgramming.second_labs.forms.lab7
 {
-    class TextRender
+    public class TextRender
     {
         public static string ChangeVowelCase(string text)
         {
-            return text;
+            return text + "a";
         }
 
 
@@ -29,7 +29,9 @@ namespace SystemProgramming.second_labs.forms.lab7
 
         private static bool IsVowel(char s)
         {
-            char[] vowel = [
+            char[] vowel = 
+                {
+
                 // Eng
                 'а', 'e', 'i', 'o', 'u', 'y',
                 'A', 'E', 'I', 'O', 'U', 'Y',
@@ -37,7 +39,8 @@ namespace SystemProgramming.second_labs.forms.lab7
                 // Rus
                 'а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я',
                 'Ф', 'У', 'Ё', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я'
-            ];
+
+                };
 
 
             foreach (var i in vowel)
