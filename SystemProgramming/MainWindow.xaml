@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <Label Content="Лабораторные работы" FontSize="30" FontWeight="Bold" HorizontalAlignment="Center" />
+            <Label Content="по системному программированию" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" />
+
+            <StackPanel Margin="40">
+                <Button Content="Информация" Name="info_button" Width="160" Height="30" Margin="10"/>
+                <Button Content="1-ый Семестр" Name="first_labs_menu_button" Width="160" Height="30" Margin="10"/>
+                <Button Content="2-ой Семестр" Name="second_labs_menu_button" Width="160" Height="30" Margin="10"/>
+                <Button Content="Выход" Name="exit_button" Width="160" Height="30" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
