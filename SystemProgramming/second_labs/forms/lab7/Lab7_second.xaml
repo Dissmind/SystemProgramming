@@ -19,6 +19,7 @@
             <Label Content="Обработанные данные" HorizontalAlignment="Center"/>
             <TextBox x:Name="Render_TextBlock" Width="360" Height="80" Margin="10" Text="..."/>
             <Button x:Name="Render_Button" Width="160" Content="Обработка" Click="Render_Button_Click" />
+            <Button x:Name="SaveTextInFile_Button" Width="160" Content="Сохранить в файл"  Click="SaveTextInFile_Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>

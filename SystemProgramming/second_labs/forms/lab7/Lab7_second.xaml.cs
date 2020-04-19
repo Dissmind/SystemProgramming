@@ -35,9 +35,13 @@ namespace SystemProgramming.second_labs.forms.lab7
                     Render_TextBlock.Text = TextRender.ChangeVowelCase(Loading_TextBlock.Text);
                     break;
             }
+        }
 
-            
+        private void SaveTextInFile_Button_Click(object sender, RoutedEventArgs e)
+        {
             // TODO: save in txt file from Render_TextBlock
+
+            FileHelper.CreateOrUpdateFile(Render_TextBlock.Text);
         }
     }
 }
