@@ -58,9 +58,10 @@ namespace SystemProgramming.second_labs.forms.lab8
 
             Data = GeneratedTableData();
 
-            AddColumns(ref Table, 4);
-            AddRows(ref Table, 5);
+            //AddColumns(ref Table, 10);
+            //AddRows(ref Table, 10);
         }
+
 
         private static void AddColumns(ref DataGrid Table, int count)
         {
@@ -84,6 +85,14 @@ namespace SystemProgramming.second_labs.forms.lab8
                 Table.Items.Add(new TableData(strData[i]));
             }
         }
+
+
+        private static void ClearTable(ref DataGrid Table)
+        {
+            Table.Items.Clear();
+            Table.Columns.Clear();
+        }
+
 
 
         private static List<List<string>> ListDoubleParseToString(List<List<double>> dataList) 
@@ -122,6 +131,16 @@ namespace SystemProgramming.second_labs.forms.lab8
             }
 
             return result;
+        }
+
+        private void RowScollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MessageBox.Show(RowScollBar.Value.ToString());
+        }
+
+        private void Render_Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
