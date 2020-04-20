@@ -4,6 +4,7 @@ using SystemProgramming.second_labs.forms.lab2;
 using SystemProgramming.second_labs.forms.lab3;
 using SystemProgramming.second_labs.forms.lab4_5;
 using SystemProgramming.second_labs.forms.lab7;
+using SystemProgramming.second_labs.forms.lab8;
 
 namespace SystemProgramming
 {
@@ -73,7 +74,16 @@ namespace SystemProgramming
 
         private void open_lab8_second_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Config.Variant % 2 == 0)
+            {
+                var win1 = new Lab8_Even_Variants_Second();
+                win1.Show();
+            }
+            else
+            {
+                var win2 = new Lab8_Odd_Variants_Second();
+                win2.Show();
+            }
         }
 
         private void open_lab10_second_Click(object sender, RoutedEventArgs e)
