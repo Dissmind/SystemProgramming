@@ -154,7 +154,7 @@ namespace SystemProgramming.second_labs.forms.lab8
             string column = Column_ComboBox.SelectedItem.ToString()
                 .Split(new string[] { ": " }, StringSplitOptions.None).Last();
 
-            string row = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString()
+            string row = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString();
 
             ClearTable(ref Table);
 
