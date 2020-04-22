@@ -135,10 +135,15 @@ namespace SystemProgramming.second_labs.forms.lab8
 
         private void RowScollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            MessageBox.Show(RowScollBar.Value.ToString());
+            
         }
 
-        private void Render_Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        private void Render_Button_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void UpdateTable_MenuButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
