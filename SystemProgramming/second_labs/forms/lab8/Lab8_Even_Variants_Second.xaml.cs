@@ -128,7 +128,7 @@ namespace SystemProgramming.second_labs.forms.lab8
                 var list = new List<double>() 
                 {
                     // TODO: randow double value
-                    21.11, 20.11, 19.11, 18.11, 17.11, 16.11, 15.11, 14.11, 12.11, 11.11
+                    21.10, 20.10, 19.11, 18.11, 17.11, 16.11, 15.11, 14.11, 12.11, 11.11
                 };
 
                 result.Add(list);
@@ -139,7 +139,14 @@ namespace SystemProgramming.second_labs.forms.lab8
 
         private void Render_Button_MouseDown(object sender, MouseEventArgs e)
         {
+            string columnSize = Column_ComboBox.SelectedItem.ToString()
+                .Split(new string[] { ": " }, StringSplitOptions.None).Last();
 
+            string rowSize = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString();
+
+            double result = MatrixCalculate.f(Data, int.Parse(rowSize), int.Parse(columnSize));
+
+            Result_TextBox.Text = (result < 0) ? "Не найденно четных чисел" : result.ToString();
         }
 
         private void UpdateTable_MenuButton_Click(object sender, RoutedEventArgs e)
@@ -147,7 +154,7 @@ namespace SystemProgramming.second_labs.forms.lab8
             string column = Column_ComboBox.SelectedItem.ToString()
                 .Split(new string[] { ": " }, StringSplitOptions.None).Last();
 
-            string row = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString();
+            string row = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString()
 
             ClearTable(ref Table);
 
