@@ -6,6 +6,10 @@
         xmlns:local="clr-namespace:SystemProgramming.second_labs.forms.lab8"
         mc:Ignorable="d"
         Title="Lab8_Even_Variants_Second" Height="600" Width="600"  MinHeight="500" MinWidth="400">
+    <Window.Resources>
+        <local:Lab8_Odd_Variants_Second x:Key="TableRow" />
+    </Window.Resources>
+    
     <Grid>
         <Menu DockPanel.Dock="Top">
             <MenuItem Name="UpdateTable_MenuButton" Header="Обновить таблицу" Click="UpdateTable_MenuButton_Click"/>
@@ -18,7 +22,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                 <StackPanel Margin="0 0 40 0">
                     <Label Content="Колонки" HorizontalAlignment="Center" FontSize="14" />
-                    <ComboBox Width="160" Margin="5">
+                    <ComboBox Name="Column_ComboBox" Width="160" Margin="5">
                         <ComboBoxItem>1</ComboBoxItem>
                         <ComboBoxItem>2</ComboBoxItem>
                         <ComboBoxItem>3</ComboBoxItem>
@@ -34,13 +38,13 @@
 
                 <StackPanel>
                     <Label Content="Строчки" HorizontalAlignment="Center" FontSize="14" />
-                    <ScrollBar Name="RowScollBar" Maximum="10" Minimum="1" Value="5"   ValueChanged="RowScollBar_ValueChanged"/>
+                    <ScrollBar Orientation="Horizontal" Name="RowScollBar" Maximum="2" Minimum="1.1" Value="5" />
                 </StackPanel>
             </StackPanel>
 
             <DataGrid Name="Table" Height="250" Width="370" Margin="10"/>
 
-            <TextBox Text="" Width="300" Height="20" Margin="10"/>
+            <TextBox Name="Result_TextBox" Text="" Width="300" Height="20" Margin="10"/>
 
             <Border BorderBrush="Black" BorderThickness="1" Width="360" Cursor="Hand">
                 <Label Name="Render_Button" Content="Обработка" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" MouseDown="Render_Button_MouseDown" />

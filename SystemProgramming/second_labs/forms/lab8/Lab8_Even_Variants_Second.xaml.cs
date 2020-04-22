@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -51,12 +52,15 @@ namespace SystemProgramming.second_labs.forms.lab8
     {
         private static List<List<double>> Data;
 
+        
+
 
         public Lab8_Even_Variants_Second()
         {
             InitializeComponent();
 
             Data = GeneratedTableData();
+            
 
             //AddColumns(ref Table, 10);
             //AddRows(ref Table, 10);
@@ -133,11 +137,6 @@ namespace SystemProgramming.second_labs.forms.lab8
             return result;
         }
 
-        private void RowScollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            
-        }
-
         private void Render_Button_MouseDown(object sender, MouseEventArgs e)
         {
 
@@ -145,7 +144,15 @@ namespace SystemProgramming.second_labs.forms.lab8
 
         private void UpdateTable_MenuButton_Click(object sender, RoutedEventArgs e)
         {
+            string column = Column_ComboBox.SelectedItem.ToString()
+                .Split(new string[] { ": " }, StringSplitOptions.None).Last();
 
+            string row = (Math.Round(RowScollBar.Value, 1) * 10 - 10).ToString();
+
+            ClearTable(ref Table);
+
+            AddColumns(ref Table, int.Parse(column));
+            AddRows(ref Table, int.Parse(row));
         }
     }
 }
