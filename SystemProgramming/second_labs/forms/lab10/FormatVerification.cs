@@ -6,21 +6,26 @@ namespace lab10_var3
 {
     class FormatVerification
     {
+        public static bool IsDigital(string text)
+        {
+            if (int.TryParse(text, out int result))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+
         public static bool IsEmpty(string text)
         {
-            return false;
+            return (text.Trim() == "") ? true : false;
         }
 
 
         public static bool SpaceCheck(string text)
         {
-            return false;
-        }
-
-
-        public static bool IsDigital(string text)
-        {
-            return false;
+            return ((text.IndexOf(' ') != -1)) ? true : false;
         }
     }
 }

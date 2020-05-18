@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace lab10_var3
+namespace SystemProgramming.second_labs.forms.lab10
 {
     /// <summary>
     /// Interaction logic for DeleteNote.xaml

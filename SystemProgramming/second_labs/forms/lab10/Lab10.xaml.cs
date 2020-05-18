@@ -51,27 +51,7 @@ namespace SystemProgramming.second_labs.forms.lab10
 
         private void Button_Click_StructDB(object sender, RoutedEventArgs e)
         {
-            // TODO
-
-            var list = new List<string>();
-
-            var connection = new SQLiteConnection(string.Format("Data Source={0};", DBHelper.DatabaseName));
-
-            connection.Open();
-            var command = new SQLiteCommand("SELECT * FROM 'car';", connection);
-
-            SQLiteDataReader reader = command.ExecuteReader();
-
-            foreach (DbDataRecord record in reader)
-            {
-                Debug.WriteLine("Name: " + record["name"].ToString());
-                Debug.WriteLine("Price: " + record["price"].ToString());
-                Debug.WriteLine("Type: " + record["type"].ToString());
-                Debug.WriteLine("InCredit: " + record["inCredit"].ToString());
-                Debug.WriteLine("Description: " + record["description"].ToString());
-
-                Debug.WriteLine("*************");
-            }
+           
         }
 
 

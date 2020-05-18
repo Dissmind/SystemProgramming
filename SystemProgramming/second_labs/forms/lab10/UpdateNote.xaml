@@ -26,11 +26,24 @@
                 Orientation="Horizontal"
                 Margin="10 10 10 10"
                 >
-                <Label>Наименование</Label>
+                <Label>Номер</Label>
 
                 <TextBox
                     Width="200"
-                    Margin="5 5 5 5"
+                    Margin="45 5 5 5"
+                    Name="Id"
+                    />
+            </StackPanel>
+
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+                <Label>Имя</Label>
+
+                <TextBox
+                    Width="200"
+                    Margin="60 5 5 5"
                     Name="Name"
                     />
             </StackPanel>
@@ -39,12 +52,12 @@
                 Orientation="Horizontal"
                 Margin="10 10 10 10"
                 >
-                <Label>Цена</Label>
+                <Label>Адрес</Label>
 
                 <TextBox
                     Width="200"
-                    Margin="60 5 5 5"
-                    Name="Price"
+                    Margin="50 5 5 5"
+                    Name="Adres"
                     />
             </StackPanel>
 
@@ -59,23 +72,11 @@
                     Margin="70 5 5 5"
                     Name="Type"
                     >
-                    <ComboBoxItem>Спорт</ComboBoxItem>
-                    <ComboBoxItem>Грузовик</ComboBoxItem>
-                    <ComboBoxItem>Легковая</ComboBoxItem>
+                    <ComboBoxItem>Детская больница</ComboBoxItem>
+                    <ComboBoxItem>Травматология</ComboBoxItem>
+                    <ComboBoxItem>Взрослая больница</ComboBoxItem>
+                    <ComboBoxItem>Психическая клиника</ComboBoxItem>
                 </ComboBox>
-            </StackPanel>
-
-            <StackPanel  
-                Orientation="Horizontal"
-                Margin="10 10 10 10"
-                >
-
-                <CheckBox
-                    Width="200"
-                    Margin="20 5 5 5"
-                    Name="InCredit"
-                    >Можно в кредит</CheckBox>
-
             </StackPanel>
 
             <StackPanel  

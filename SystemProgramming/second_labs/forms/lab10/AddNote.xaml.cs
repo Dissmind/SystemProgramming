@@ -31,15 +31,15 @@ namespace lab10_var3
 
             if (modalConfirmResult == MessageBoxResult.Yes)
             {
-                var note = new NoteModel();
+                var model = new MedModel();
 
-                note.Name        = Name.Text;
-                note.Price       = Int32.Parse(Price.Text);
-                note.Type        = Type.Text;
-                note.InCredit    = InCredit.IsChecked.Value;
-                note.Description = Description.Text;
+                model.Id = Int32.Parse(Id.Text);
+                model.Name = Name.Text;
+                model.Adress = Adres.Text;
+                model.Type = Type.Text;
+                model.Description = Description.Text;
 
-                Repository.Add(note);
+                Repository.Add(model);
 
                 MessageBox.Show($"Запись с именем {Name.Text} - успешно добавленная в базу!");
 
@@ -50,6 +50,42 @@ namespace lab10_var3
 
         private bool CheckData()
         {
+
+            // Check id input
+            if (FormatVerification.IsEmpty(Id.Text))
+            {
+                MessageBox.Show("Поле код должно быть заполненно!");
+
+                return false;
+            }
+            else if (FormatVerification.SpaceCheck(Id.Text))
+            {
+                MessageBox.Show("Поле код не должно иметь пробелы!");
+
+                return false;
+            }
+            else if (FormatVerification.IsDigital(Id.Text))
+            {
+                MessageBox.Show("Поле код должно состоять только из чисел!");
+
+                return false;
+            }
+            else
+            {
+                var list = Repository.GetAllId();
+
+                foreach (var i in list)
+                {
+                    if (i == Id.Text)
+                    {
+                        MessageBox.Show("Запись с таким кодом уже существует");
+
+                        return false;
+                    }
+                }
+            }
+
+
             // Check name input
             if (FormatVerification.IsEmpty(Name.Text))
             {
@@ -60,12 +96,6 @@ namespace lab10_var3
             else if (FormatVerification.SpaceCheck(Name.Text))
             {
                 MessageBox.Show("Поле имя не должно иметь пробелы!");
-
-                return false;
-            }
-            else if (!FormatVerification.IsDigital(Name.Text[0].ToString()))
-            {
-                MessageBox.Show("Поле имя не должно начинаться с цифры!");
 
                 return false;
             }
@@ -82,27 +112,6 @@ namespace lab10_var3
                         return false;
                     }
                 }
-            }
-
-
-            // Check price input
-            if (FormatVerification.IsEmpty(Price.Text))
-            {
-                MessageBox.Show("Поле цена должно быть заполненно!");
-
-                return false;
-            }
-            else if (FormatVerification.IsDigital(Price.Text))
-            {
-                MessageBox.Show("Поле цена должно содержать только числа!");
-
-                return false;
-            }
-            else if (Int32.Parse(Price.Text) < 0)
-            {
-                MessageBox.Show("Цена не должна быть меньше 0");
-
-                return false;
             }
 
 

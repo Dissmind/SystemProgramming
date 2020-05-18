@@ -21,7 +21,7 @@ namespace lab10_var3
                 SQLiteConnection.CreateFile(DatabaseName);
 
                 var connection = new SQLiteConnection(string.Format("Data Source={0};", DatabaseName));
-                var command = new SQLiteCommand("CREATE TABLE car (name TEXT PRIMARY KEY, price INTEGER, type TEXT, inCredit INTEGER, description TEXT);", connection);
+                var command = new SQLiteCommand("CREATE TABLE med (id INTEGER PRIMARY KEY, name TEXT, adress TEXT, type TEXT, description TEXT);", connection);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -32,8 +32,6 @@ namespace lab10_var3
 
         public static void NonQueryCommand(string query)
         {
-            // Example query: "INSERT INTO 'test' ('name', 'price', 'type', 'inCredit', description) VALUES ('BMW', '123', 'light', 0, 'desc');"
-
             var connection = new SQLiteConnection(string.Format("Data Source={0};", DatabaseName));
 
             var command = new SQLiteCommand(query, connection);
