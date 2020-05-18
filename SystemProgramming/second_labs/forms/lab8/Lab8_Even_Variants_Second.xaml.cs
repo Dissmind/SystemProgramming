@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
+
 
 namespace SystemProgramming.second_labs.forms.lab8
 {
@@ -52,18 +48,14 @@ namespace SystemProgramming.second_labs.forms.lab8
     {
         private static List<List<double>> Data;
 
-        
-
-
         public Lab8_Even_Variants_Second()
         {
             InitializeComponent();
 
             Data = GeneratedTableData();
-            
 
-            //AddColumns(ref Table, 10);
-            //AddRows(ref Table, 10);
+            AddColumns(ref Table, 5);
+            AddRows(ref Table, 5);
         }
 
 
@@ -137,6 +129,7 @@ namespace SystemProgramming.second_labs.forms.lab8
             return result;
         }
 
+
         private void Render_Button_MouseDown(object sender, MouseEventArgs e)
         {
             string columnSize = Column_ComboBox.SelectedItem.ToString()
@@ -148,6 +141,7 @@ namespace SystemProgramming.second_labs.forms.lab8
 
             Result_TextBox.Text = (result < 0) ? "Не найденно четных чисел" : result.ToString();
         }
+
 
         private void UpdateTable_MenuButton_Click(object sender, RoutedEventArgs e)
         {

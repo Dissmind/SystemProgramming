@@ -38,7 +38,7 @@
 
                 <StackPanel>
                     <Label Content="Строчки" HorizontalAlignment="Center" FontSize="14" />
-                    <ScrollBar Orientation="Horizontal" Name="RowScollBar" Maximum="2" Minimum="1.1" Value="5" />
+                    <ScrollBar Orientation="Horizontal" Name="RowScollBar" Maximum="2" Minimum="1.1" Value="1.5" />
                 </StackPanel>
             </StackPanel>
 

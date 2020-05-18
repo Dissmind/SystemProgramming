@@ -1,0 +1,18 @@
+﻿<Window x:Class="SystemProgramming.second_labs.forms.lab10.Lab10"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemProgramming.second_labs.forms.lab10"
+        mc:Ignorable="d"
+        Title="Lab10" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="40">
+            <Button Content="Добавить запись" Name="info_button" Width="160" Height="30" Margin="10" Click="Button_Click_OpenAdd" />
+            <Button Content="Редактировать запись" Name="first_labs_menu_button" Width="160" Height="30" Margin="10" Click="Button_Click_EditNote" />
+
+            <Button Content="Структура БД" Name="exit_button" Width="160" Height="30" Margin="10" Click="Button_Click_StructDB" />
+            <Button Content="Выход" Name="e1xit_button" Width="160" Height="30" Margin="10" Click="Button_Click_Exit" />
+        </StackPanel>
+    </Grid>
+</Window>

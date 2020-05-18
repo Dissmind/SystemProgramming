@@ -1,0 +1,88 @@
+﻿<Window x:Class="lab10_var3.AddNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab10_var3"
+        mc:Ignorable="d"
+        Title="AddNote" Height="350" MinHeight="350" Width="350" MinWidth="350">
+    <Grid>
+        <StackPanel>
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+                <Label>Наименование</Label>
+
+                <TextBox
+                    Width="200"
+                    Margin="5 5 5 5"
+                    Name="Name"
+                    />
+            </StackPanel>
+
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+                <Label>Цена</Label>
+
+                <TextBox
+                    Width="200"
+                    Margin="60 5 5 5"
+                    Name="Price"
+                    />
+            </StackPanel>
+
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+                <Label>Тип</Label>
+
+                <ComboBox
+                    Width="200"
+                    Margin="70 5 5 5"
+                    Name="Type"
+                    >
+                    <ComboBoxItem>Спорт</ComboBoxItem>
+                    <ComboBoxItem>Грузовик</ComboBoxItem>
+                    <ComboBoxItem>Легковая</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+             
+                <CheckBox
+                    Width="200"
+                    Margin="20 5 5 5"
+                    Name="InCredit"
+                    >Можно в кредит</CheckBox>
+                
+            </StackPanel>
+
+            <StackPanel  
+                Orientation="Horizontal"
+                Margin="10 10 10 10"
+                >
+                <Label>Описание</Label>
+
+                <TextBox
+                    Width="200"
+                    Margin="10 5 5 5"
+                    Height="50"
+                    Name="Description"
+                    />
+            </StackPanel>
+
+            <Button
+                Margin="10 10 10 10"
+                Width="200"
+                Click="Button_Click_AddNote"
+                >Добавить</Button>
+        </StackPanel>
+    </Grid>
+</Window>

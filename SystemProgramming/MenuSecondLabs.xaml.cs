@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-
+using SystemProgramming.second_labs.forms.lab10;
 using SystemProgramming.second_labs.forms.lab2;
 using SystemProgramming.second_labs.forms.lab3;
 using SystemProgramming.second_labs.forms.lab4_5;
@@ -88,7 +88,8 @@ namespace SystemProgramming
 
         private void open_lab10_second_Click(object sender, RoutedEventArgs e)
         {
-
+            var win = new Lab10();
+            win.Show();
         }
     }
 }

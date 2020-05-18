@@ -29,12 +29,23 @@ namespace SystemProgramming.second_labs.forms.lab7
 
         private void Render_Button_Click(object sender, RoutedEventArgs e)
         {
+            if (CheckAtLimitString(Loading_TextBlock.Text))
+            {
+                MessageBox.Show("Превышен лимит символов");
+                return;
+            }
+
             switch (Config.Variant)
             {
                 case 18:
                     Render_TextBlock.Text = TextRender.ChangeVowelCase(Loading_TextBlock.Text);
                     break;
             }
+        }
+
+        private static bool CheckAtLimitString(string text)
+        {
+            return (text.Length > 1000) ? true : false;
         }
 
         private void SaveTextInFile_Button_Click(object sender, RoutedEventArgs e)
